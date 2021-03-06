@@ -1,0 +1,296 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+	height: 25rem;
+	background-color: #1f2833;
+}
+main {
+	width: 80%;
+	margin: auto;
+}
+/* Styling Navbar */
+.navbar-brand {
+	font-size: 2rem;
+	color: aliceblue !important;
+	font-size: 1.2rem !important;
+	width: 40%;
+}
+.logo {
+	width: 70%;
+}
+.navbar {
+	background-color: #45a29e !important;
+}
+.container {
+	padding: 0;
+}
+
+.nav-item {
+	text-align: start;
+	font-size: 1.2rem;
+}
+.nav-link {
+	color: white !important;
+}
+.nav-link:hover {
+	color: khaki !important;
+}
+.header-container {
+	width: 90%;
+	display: flex;
+	margin: auto;
+}
+.header-text-container {
+	color: white;
+	width: 40%;
+	margin-left: 1rem;
+	margin-top: 4rem;
+}
+.header-text-container p {
+	margin-top: 2rem;
+}
+.header-text-container a {
+	color: khaki;
+	font-size: 0.9rem;
+	text-decoration: underline;
+}
+.header-text-container a:hover {
+	color: darkgray;
+}
+.header-image-container {
+	width: 20%;
+	margin-left: 22rem;
+	margin-top: 3rem;
+}
+.virus-img {
+	width: 100%;
+}
+/* End Navbar Styling */
+
+.card-section h1 {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	margin-top: 8rem;
+	font-size: 2.5rem;
+}
+.card-deck {
+	width: 80%;
+	margin: auto;
+	margin-top: 8rem;
+}
+.card-deck,
+.card-deck-2,
+.card-deck-margin {
+	margin-top: 5rem;
+}
+
+.card-header {
+	font-size: 1.5rem;
+	background-color: lightgray;
+}
+.smaller-card-header {
+	height: min-content;
+	font-size: 1.1rem;
+}
+
+.card-body {
+	font-size: 2rem;
+}
+.card-body hr {
+	margin: 0;
+}
+.card-text {
+	margin-bottom: 2rem;
+}
+.card-text-smaller {
+	font-size: 1.3rem;
+}
+#total_cases,
+#new_case,
+#total_cases_usa,
+#new_cases_usa {
+	color: #ffa600;
+}
+#first_case {
+	color: rgb(15, 82, 186);
+}
+.card-link {
+	font-size: 0.8rem;
+}
+.world-map-section,
+.table-section,
+.world-cases-chart,
+.usa-chart,
+.vaccine-map,
+.vaccine-chart {
+	width: 80%;
+	margin: auto;
+	margin-top: 10rem;
+}
+.live-world-map {
+	width: 80%;
+	margin: auto;
+	margin-top: 5rem;
+}
+.world-map-section h1,
+.table-section h1,
+.world-cases-chart h1,
+.usa-chart h1,
+.table-section h1,
+.vaccine-map h1 {
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+.world-map-section p,
+.table-section p,
+.world-cases-chart p,
+.vaccine-map p {
+	font-size: 0.9rem;
+	width: 90%;
+}
+.world-map-wraper {
+	margin: auto;
+}
+.paragraph {
+	width: 80%;
+	margin: auto;
+	margin-top: 5rem;
+	font-size: 1rem;
+}
+
+.world-table-heading {
+	display: flex;
+	margin: auto;
+	background-color: lightgray;
+}
+.world-table-heading-content {
+	width: 25%;
+	text-align: start;
+	font-weight: bold;
+	padding: 1rem 0 1rem 2rem;
+}
+.world-table-wraper {
+	margin: auto;
+	height: 800px;
+	overflow: scroll;
+}
+
+.round-chart {
+	width: 80%;
+	margin: auto;
+	margin-top: 10rem;
+}
+.timeline-paragraph {
+	width: 70%;
+	margin: auto;
+	margin-top: 5rem;
+}
+.timeline-paragraph h1 {
+	font-size: 1.7rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	font-weight: bold;
+}
+.table-section {
+	width: 80%;
+	margin: auto;
+	margin-top: 10rem;
+}
+.search-container {
+	width: 100%;
+	text-align: right;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+}
+.searchbox {
+	width: 20%;
+}
+.search-by-country {
+	margin-right: 1rem;
+	font-size: 1rem;
+}
+.table-wrapper {
+	width: 100%;
+	margin: auto;
+	height: 800px;
+	overflow: scroll;
+}
+table {
+	width: 100%;
+	padding: 15px 10px;
+	text-align: center;
+	border-spacing: 0;
+}
+
+tr:nth-child(even) {
+	background-color: rgb(240, 240, 240);
+	font-size: 0.9rem;
+}
+tr:nth-child(odd) {
+	color: black;
+	font-size: 0.9rem;
+	background-color: #fafafa;
+}
+tr td {
+	padding: 15px 0;
+	width: 20%;
+}
+.table-extra-style {
+	padding: 1rem 0 1rem 0;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+/* Footer Stylnig */
+footer {
+	text-align: center;
+	height: 10rem;
+	background-color: #1f2833;
+	margin-top: 10rem;
+}
+.footer-logo {
+	width: 15rem;
+	margin-top: 2rem;
+}
+
+.bottom {
+	display: flex;
+	width: fit-content;
+	margin: auto;
+	color: white;
+}
+.copy-right,
+.bottom a {
+	font-size: 0.8rem;
+	color: white;
+}
+
+.contact:hover {
+	color: khaki !important;
+}
+
+.fa-envelope {
+	color: white;
+}
+
+.fa-envelope:hover {
+	text-decoration: underline;
+}
+/* End Footer Ftyling */
+
+.timeline-img {
+	width: 100%;
+	margin: 2rem 0 2rem 0;
+}
+.bold {
+	font-weight: bold;
+}
+.timeline-paragraph p a {
+	font-size: 1rem;
+}
+.source-link {
+	text-decoration: underline;
+}

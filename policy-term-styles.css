@@ -1,0 +1,23 @@
+/* This CSS file styles only terms.html and privacy-policy.html */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 60%;
+	margin: auto;
+	margin-bottom: 2rem;
+}
+h1,
+h2,
+h3 {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+@media (max-width: 1024px) {
+	body {
+		width: 85%;
+		margin: auto;
+		margin-bottom: 3rem;
+	}
+}
