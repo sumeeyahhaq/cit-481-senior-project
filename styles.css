@@ -189,10 +189,22 @@ main {
 	margin-top: 5rem;
 }
 .timeline-paragraph h1 {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	margin-bottom: 2rem;
+	margin-top: 5rem;
 	text-align: center;
 	font-weight: bold;
+}
+.timeline-paragraph h2 {
+	font-size: 1.3rem;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+.timeline-paragraph p a {
+	font-size: 1rem;
+}
+.timeline-paragraph ul {
+	padding-left: 2rem;
 }
 .table-section {
 	width: 80%;
@@ -288,15 +300,9 @@ footer {
 .bold {
 	font-weight: bold;
 }
-.timeline-paragraph p a {
-	font-size: 1rem;
-}
+
 .source-link {
 	text-decoration: underline;
 }
 
 /* Responsivnes */
-
-/* new comment */
-
-/* another comment */
