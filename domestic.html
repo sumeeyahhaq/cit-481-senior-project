@@ -27,7 +27,7 @@
 	</head>
 	<body onload="copyRights()">
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 				<div class="container">
 					<a class="navbar-brand" href="index.html"
 						><img src="assets/logo.png" alt="logo" class="logo" />
@@ -49,13 +49,48 @@
 								<a class="nav-link" href="index.html">Worldwide</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="domestic.html">Domestic</a>
+								<a class="nav-link current" href="domestic.html">Domestic</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="timeline.html">Timeline</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="vaccine.html">Vaccine</a>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="vaccine.html"
+									id="navbarDropdown"
+									role="button"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									Vaccine
+								</a>
+
+								<div
+									class="dropdown-menu drop"
+									aria-labelledby="navbarDropdown"
+								>
+									<a class="dropdown-item" href="vaccine.html#vaccination-chart"
+										>Vaccination Chart</a
+									>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="vaccine.html#how-vaccines-work"
+										>How Vaccines Work</a
+									>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="vaccine.html#Pfizer-BioNTech"
+										>Pfizer-BioNTech</a
+									>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="vaccine.html#Moderna"
+										>Moderna</a
+									>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="vaccine.html#Johnson-Janssen"
+										>Johnson’s Janssen</a
+									>
+								</div>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="prevention.html">Prevention</a>

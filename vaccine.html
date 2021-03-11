@@ -27,7 +27,7 @@
 	</head>
 	<body onload="copyRights()">
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 				<div class="container">
 					<a class="navbar-brand" href="index.html"
 						><img src="assets/logo.png" alt="logo" class="logo" />
@@ -54,15 +54,52 @@
 							<li class="nav-item">
 								<a class="nav-link" href="timeline.html">Timeline</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="vaccine.html">Vaccine</a>
+
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link current dropdown-toggle"
+									href="vaccine.html"
+									id="navbarDropdown"
+									role="button"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									Vaccine
+								</a>
+
+								<div
+									class="dropdown-menu drop"
+									aria-labelledby="navbarDropdown"
+								>
+									<a class="dropdown-item" href="#vaccination-chart"
+										>Vaccination Chart</a
+									>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#how-vaccines-work"
+										>How Vaccines Work</a
+									>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#Pfizer-BioNTech"
+										>Pfizer-BioNTech</a
+									>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#Moderna">Moderna</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#Johnson-Janssen"
+										>Johnson’s Janssen</a
+									>
+								</div>
 							</li>
+
 							<li class="nav-item">
 								<a class="nav-link" href="prevention.html">Prevention</a>
 							</li>
+
 							<li class="nav-item">
 								<a class="nav-link" href="about.html">About</a>
 							</li>
+
 							<li class="nav-item">
 								<a class="nav-link" href="faq.html">FAQ</a>
 							</li>
@@ -91,6 +128,7 @@
 		</header>
 
 		<main>
+			<div id="vaccination-chart"></div>
 			<section class="vaccine-map">
 				<h1>Vaccination Chart</h1>
 				<p>
@@ -113,6 +151,7 @@
 				></iframe>
 			</section>
 
+			<div id="how-vaccines-work"></div>
 			<section class="timeline-paragraph">
 				<h1>How Vaccines Work</h1>
 				<p>
@@ -172,6 +211,7 @@
 					and are a sign that the body is building immunity.
 				</p>
 
+				<div id="Pfizer-BioNTech"></div>
 				<h1>Pfizer-BioNTech</h1>
 				<h2>Side Effects</h2>
 				<p>
@@ -247,6 +287,7 @@
 					the Pfizer-BioNTech COVID-19 Vaccine.
 				</p>
 
+				<div id="Moderna"></div>
 				<h1>Moderna</h1>
 				<h2>Side Effects</h2>
 				<p>
@@ -307,6 +348,7 @@
 					Remember to bring your card when you return.
 				</p>
 
+				<div id="Johnson-Janssen"></div>
 				<h1>Johnson & Johnson’s Janssen</h1>
 				<h2>Side Effects</h2>
 				<p>

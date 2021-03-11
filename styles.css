@@ -35,12 +35,37 @@ main {
 	color: white !important;
 }
 .nav-link:hover {
+	opacity: 0.5;
+}
+
+.dropdown-menu {
+	background-color: #45a29e;
+	border: none;
+	padding: 0;
+}
+.dropdown-menu a {
+	color: white;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.dropdown-divider {
+	margin: 0;
+}
+.navbar-nav li:hover > div.drop {
+	display: block;
+}
+.dropdown-menu a:focus {
+	background-color: #45a29e;
+}
+.current {
 	color: khaki !important;
+	border-bottom: 2px solid khaki;
 }
 .header-container {
 	width: 90%;
 	display: flex;
 	margin: auto;
+	padding-top: 4rem;
 }
 .header-text-container {
 	color: white;
@@ -129,6 +154,9 @@ main {
 	width: 80%;
 	margin: auto;
 	margin-top: 10rem;
+}
+.vaccine-map {
+	margin-top: 1rem;
 }
 .live-world-map {
 	width: 80%;
@@ -303,6 +331,16 @@ footer {
 
 .source-link {
 	text-decoration: underline;
+}
+/* divs before the section on vaccine pages */
+#vaccination-chart {
+	height: 5rem;
+}
+#Pfizer-BioNTech,
+#how-vaccines-work,
+#Moderna,
+#Johnson-Janssen {
+	height: 1rem;
 }
 
 /* Responsivnes */
