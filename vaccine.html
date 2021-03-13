@@ -25,7 +25,7 @@
 		<link rel="icon" href="assets/favicon.ico" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
-	<body onload="copyRights()">
+	<body onload="checkDevices(); copyRights()">
 		<header>
 			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 				<div class="container">
@@ -69,24 +69,30 @@
 								</a>
 
 								<div
+									id="remove-hover"
 									class="dropdown-menu drop"
 									aria-labelledby="navbarDropdown"
 								>
-									<a class="dropdown-item" href="#vaccination-chart"
+									<a class="dropdown-item" href="vaccine.html">Vaccination </a>
+									<div class="dropdown-divider"></div>
+
+									<a class="dropdown-item" href="vaccine.html#vaccination-chart"
 										>Vaccination Chart</a
 									>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#how-vaccines-work"
+									<a class="dropdown-item" href="vaccine.html#how-vaccines-work"
 										>How Vaccines Work</a
 									>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#Pfizer-BioNTech"
+									<a class="dropdown-item" href="vaccine.html#Pfizer-BioNTech"
 										>Pfizer-BioNTech</a
 									>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#Moderna">Moderna</a>
+									<a class="dropdown-item" href="vaccine.html#Moderna"
+										>Moderna</a
+									>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#Johnson-Janssen"
+									<a class="dropdown-item" href="vaccine.html#Johnson-Janssen"
 										>Johnson’s Janssen</a
 									>
 								</div>
@@ -117,9 +123,7 @@
 						worldwide or per country. The data is updated regurarly to reflect
 						the most up to date information.<br />
 					</p>
-					<a href="prevention.html"
-						>See how you can prevent or slow down the spread of Covid-19.</a
-					>
+					<a href="prevention.html">How to prevent the spread of COVID-19</a>
 				</div>
 				<div class="header-image-container">
 					<img src="assets/virus-image.png" alt="Covid-19" class="virus-img" />
@@ -431,6 +435,7 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="lightbox2-2.11.3/dist/js/lightbox.js"></script>
+		<script src="check-devices.js" type="text/javascript"></script>
 		<script src="lightbox-options.js" type="text/javascript"></script>
 		<script src="footer.js" type="text/javascript"></script>
 		<footer>
@@ -446,6 +451,9 @@
 				<a class="contact" href="privacy-policy.html" target="_blank"
 					>Privacy Policy
 				</a>
+				&nbsp; | &nbsp;
+				<a class="contact" href="about.html#source-section"> Resources</a>
+
 				&nbsp; | &nbsp;
 				<a class="contact" href="mailto: svksams@gmail.com">
 					<i class="fas contact fa-envelope"> Contact us</i></a
