@@ -357,6 +357,28 @@ footer {
 	margin-top: 5rem;
 }
 
+/* FAQ */
+
+.covid-faq {
+	width: 70%;
+	margin: auto;
+}
+
+.covid-faq h1 {
+	font-size: 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	text-align: start;
+}
+
+.covid-faq h1:first-child {
+	margin-top: 6rem;
+	
+}
+.covid-faq p {
+	font-size: 1rem;
+}
+
 /******************** Responsivnes *******************/
 
 @media (max-width: 575px) {
@@ -674,4 +696,3 @@ footer {
 		width: 85%;
 	}
 }
-
