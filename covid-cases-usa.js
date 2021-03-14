@@ -1,5 +1,5 @@
 //This JS file fetches API for cases in USA only
-let country_name = document.getElementById("country_name");
+let country_name_usa = document.getElementById("country_name_usa");
 let total_cases_usa = document.getElementById("total_cases_usa");
 let total_deaths_usa = document.getElementById("total_deaths_usa");
 let total_recovered_usa = document.getElementById("total_recovered_usa");
@@ -20,7 +20,9 @@ fetch(
 	.then((response) =>
 		response.json().then((data) => {
 			console.log(data);
+
 			let i = 0;
+
 			let countries_stat = data.countries_stat;
 			console.log(countries_stat[i]);
 			total_cases_usa.innerHTML = countries_stat[i].cases;
@@ -28,6 +30,12 @@ fetch(
 			total_recovered_usa.innerHTML = countries_stat[i].total_recovered;
 			new_cases_usa.innerHTML = "+" + countries_stat[i].new_cases;
 			new_deaths_usa.innerHTML = "+" + countries_stat[i].new_deaths;
+			country = countries_stat[i].country_name;
+			if (country == "USA") {
+				country_name_usa.innerHTML = "&#x1f1fa;&#x1f1f8; United States";
+			} else {
+				country_name_usa.innerHTML = countries_stat[i].country_name;
+			}
 		})
 	)
 
