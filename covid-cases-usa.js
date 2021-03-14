@@ -20,7 +20,7 @@ fetch(
 	.then((response) =>
 		response.json().then((data) => {
 			console.log(data);
-			let i = 1;
+			let i = 0;
 			let countries_stat = data.countries_stat;
 			console.log(countries_stat[i]);
 			total_cases_usa.innerHTML = countries_stat[i].cases;
