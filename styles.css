@@ -141,6 +141,7 @@ main {
 }
 .card-text {
 	margin-bottom: 2rem;
+	font-size: 1.5rem;
 }
 .card-text-smaller {
 	font-size: 1.3rem;
@@ -381,7 +382,7 @@ footer {
 	margin-top: 5rem;
 }
 
-/******************** Responsivnes *******************/
+/**************************************** Responsivnes ****************************************/
 
 @media (max-width: 575px) {
 	/* Navbbar */
@@ -517,6 +518,14 @@ footer {
 @media (max-width: 320px) {
 	.logo {
 		width: 10rem;
+	}
+	.card-body {
+		font-size: 1.1rem;
+	}
+	.card-body a {
+		display: inline-block;
+		margin: 0 !important;
+		font-size: 0.8rem;
 	}
 	.world-table-heading-content {
 		font-size: 0.2rem;
@@ -666,6 +675,38 @@ footer {
 	.card-header {
 		font-size: 1.1rem;
 	}
+	.card-body {
+		font-size: 1rem;
+	}
+}
+@media (min-width: 601px) and (max-width: 767px) {
+	.card-body {
+		font-size: 1.1rem;
+	}
+	.card-body a {
+		display: inline-block;
+		margin: 0 !important;
+		font-size: 0.8rem;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.card-deck {
+		width: 90%;
+		margin-top: 2rem;
+	}
+	.card-header {
+		font-size: 1.1rem;
+	}
+	.card-body {
+		font-size: 1.1rem;
+	}
+	.card-text {
+		font-size: 1rem;
+	}
+	.card-body a {
+		display: inline-block;
+		margin: 0 !important;
+	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	main {
@@ -682,6 +723,10 @@ footer {
 
 	.logo {
 		width: 15rem;
+	}
+
+	.card-body a {
+		font-size: 0.8rem;
 	}
 	.nav-item {
 		font-size: 1rem;
@@ -731,29 +776,45 @@ footer {
 		font-size: 1.2rem;
 	}
 	.card-text {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-	.card-deck {
-		width: 90%;
-		margin-top: 2rem;
+@media (min-width: 992px) and (max-width: 1024px) {
+	.card-text {
+		font-size: 1.3rem;
+	}
+}
+@media (min-width: 1025px) and (max-width: 1079px) {
+	.card-text {
+		font-size: 1.3rem;
+		text-align: center !important;
 	}
 	.card-header {
 		font-size: 1.1rem;
 	}
-	.card-body {
-		font-size: 1.1rem;
+	.card-body a {
+		display: inline-block;
+		font-size: 0.8rem;
+		margin: 0 !important;
 	}
-	.card-text {
+	.card-body {
+		font-size: 1rem;
+	}
+}
+@media (min-width: 1080px) and (max-width: 1185px) {
+	.card-body {
 		font-size: 1rem;
 	}
 	.card-body a {
 		display: inline-block;
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 		margin: 0 !important;
 	}
+	.card-text {
+		font-size: 1.5rem;
+	}
 }
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 	.card-deck {
 		width: 85%;
