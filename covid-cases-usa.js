@@ -21,8 +21,8 @@ fetch(
 		response.json().then((data) => {
 			console.log(data);
 
+			// 0 is for USA changing this number will change the country
 			let i = 0;
-
 			let countries_stat = data.countries_stat;
 			console.log(countries_stat[i]);
 			total_cases_usa.innerHTML = countries_stat[i].cases;
