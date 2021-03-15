@@ -2,10 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
-html,
-body {
-	overflow-x: hidden;
-}
+
 .fixedPosition {
 	opacity: 0.5;
 }
@@ -157,18 +154,33 @@ main {
 #first_case {
 	color: rgb(15, 82, 186);
 }
+#world-chart,
+#world-table,
+#us-table,
+#us-chart {
+	height: 8rem;
+}
 .card-link {
 	font-size: 0.8rem;
 }
 .world-map-section,
-.table-section,
-.world-cases-chart,
-.usa-chart,
 .vaccine-map,
 .vaccine-chart {
 	width: 80%;
 	margin: auto;
 	margin-top: 10rem;
+}
+.usa-chart,
+.table-section,
+.world-cases-chart {
+	width: 80%;
+	margin: auto;
+	margin-top: 2rem;
+}
+.table-section-timeline {
+	width: 80%;
+	margin: auto;
+	margin-top: 8rem;
 }
 .vaccine-map {
 	margin-top: 1rem;
@@ -182,6 +194,7 @@ main {
 .table-section h1,
 .world-cases-chart h1,
 .usa-chart h1,
+.table-section-timeline h1,
 .table-section h1,
 .vaccine-map h1 {
 	font-size: 1.4rem;
@@ -189,6 +202,7 @@ main {
 }
 .world-map-section p,
 .table-section p,
+.table-section-timeline p,
 .world-cases-chart p,
 .vaccine-map p {
 	font-size: 0.9rem;
@@ -224,12 +238,15 @@ main {
 .round-chart {
 	width: 80%;
 	margin: auto;
-	margin-top: 6rem;
+	margin-top: 8rem;
 }
 .timeline-paragraph {
 	width: 70%;
 	margin: auto;
 	margin-top: 5rem;
+}
+.timeline-paragraph-extra-style {
+	margin-top: 10rem;
 }
 .timeline-paragraph h1 {
 	font-size: 1.5rem;
@@ -249,11 +266,7 @@ main {
 .timeline-paragraph ul {
 	padding-left: 2rem;
 }
-.table-section {
-	width: 80%;
-	margin: auto;
-	margin-top: 10rem;
-}
+
 .search-container {
 	width: 100%;
 	text-align: right;
@@ -372,6 +385,10 @@ footer {
 
 @media (max-width: 575px) {
 	/* Navbbar */
+	html,
+	body {
+		overflow-x: hidden;
+	}
 	main {
 		width: 90%;
 	}
@@ -487,6 +504,9 @@ footer {
 	}
 }
 @media (max-width: 320px) {
+	.logo {
+		width: 10rem;
+	}
 	.world-table-heading-content {
 		font-size: 0.2rem;
 		padding-left: 0.2rem;
@@ -616,6 +636,12 @@ footer {
 	}
 	.table-extra-style {
 		padding-left: 0rem;
+	}
+}
+@media (min-width: 576px) and (max-width: 600px) {
+	.card-text,
+	.card-header {
+		font-size: 1.1rem;
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
