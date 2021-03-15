@@ -420,7 +420,15 @@ footer {
 	.header-image-container {
 		display: none;
 	}
-
+	#world-chart,
+	#world-table,
+	#us-table,
+	#us-chart {
+		height: 3rem;
+	}
+	.timeline-paragraph-extra-style {
+		margin-top: 0rem;
+	}
 	/* Footer */
 
 	.footer-logo {
@@ -450,6 +458,7 @@ footer {
 	}
 	.world-map-section,
 	.table-section,
+	.table-section-timeline,
 	.world-cases-chart,
 	.usa-chart,
 	.vaccine-map,
@@ -461,6 +470,7 @@ footer {
 	.card-section h1,
 	.world-map-section h1,
 	.table-section h1,
+	.table-section-timeline h1,
 	.world-cases-chart h1,
 	.usa-chart h1,
 	.vaccine-map h1 {
@@ -470,6 +480,7 @@ footer {
 	}
 	.world-map-section p,
 	.table-section p,
+	.table-section-timeline p,
 	.world-cases-chart p,
 	.vaccine-map p,
 	.paragraph,
@@ -528,6 +539,7 @@ footer {
 	.card-section h1,
 	.world-map-section h1,
 	.table-section h1,
+	.table-section-timeline h1,
 	.world-cases-chart h1,
 	.usa-chart h1,
 	.vaccine-map h1,
@@ -539,6 +551,7 @@ footer {
 	}
 	.world-map-section p,
 	.table-section p,
+	.table-section-timeline p,
 	.world-cases-chart p,
 	.vaccine-map p,
 	.paragraph,
@@ -553,7 +566,15 @@ footer {
 	header {
 		height: fit-content;
 	}
-
+	#world-chart,
+	#world-table,
+	#us-table,
+	#us-chart {
+		height: 1rem;
+	}
+	.timeline-paragraph-extra-style {
+		margin-top: 0rem;
+	}
 	.card-deck {
 		width: 100% !important;
 		margin-top: 3rem;
@@ -589,6 +610,7 @@ footer {
 	.card-section h1,
 	.world-map-section h1,
 	.table-section h1,
+	.table-section-timeline h1,
 	.world-cases-chart h1,
 	.usa-chart h1,
 	.vaccine-map h1 {
@@ -617,6 +639,7 @@ footer {
 	.world-map-section,
 	.paragraph,
 	.table-section,
+	.table-section-timeline,
 	.world-cases-chart,
 	.round-chart,
 	.usa-chart,
@@ -648,6 +671,7 @@ footer {
 	main {
 		width: 90%;
 	}
+
 	.card-deck {
 		width: 100%;
 		margin-top: 3rem;
@@ -684,6 +708,7 @@ footer {
 	}
 	.world-map-section,
 	.table-section,
+	.table-section-timeline,
 	.world-cases-chart,
 	.usa-chart,
 	.vaccine-map,
