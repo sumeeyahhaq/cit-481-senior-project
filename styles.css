@@ -383,7 +383,59 @@ footer {
 }
 
 /**************************************** Responsivnes ****************************************/
-
+@media (max-width: 320px) {
+	.logo {
+		width: 10rem;
+	}
+	.card-body {
+		font-size: 1.1rem;
+	}
+	.card-body a {
+		display: inline-block;
+		margin: 0 !important;
+		font-size: 0.8rem;
+	}
+	.world-table-heading-content {
+		font-size: 0.2rem;
+		padding-left: 0.2rem;
+	}
+	.footer-logo {
+		width: 10rem;
+		margin-bottom: 0.7rem;
+	}
+	.bottom a,
+	.copy-right {
+		font-size: 0.4rem;
+	}
+	.card-header {
+		font-size: 1rem;
+	}
+	.card-text {
+		font-size: 1.3rem;
+	}
+	.card-section h1,
+	.world-map-section h1,
+	.table-section h1,
+	.table-section-timeline h1,
+	.world-cases-chart h1,
+	.usa-chart h1,
+	.vaccine-map h1,
+	.timeline-paragraph h1 {
+		font-size: 1.3rem;
+	}
+	.timeline-paragraph h2 {
+		font-size: 1.1rem;
+	}
+	.world-map-section p,
+	.table-section p,
+	.table-section-timeline p,
+	.world-cases-chart p,
+	.vaccine-map p,
+	.paragraph,
+	.timeline-paragraph p {
+		font-size: 0.9rem;
+	}
+}
 @media (max-width: 575px) {
 	/* Navbbar */
 	html,
@@ -515,60 +567,8 @@ footer {
 		width: 100%;
 	}
 }
-@media (max-width: 320px) {
-	.logo {
-		width: 10rem;
-	}
-	.card-body {
-		font-size: 1.1rem;
-	}
-	.card-body a {
-		display: inline-block;
-		margin: 0 !important;
-		font-size: 0.8rem;
-	}
-	.world-table-heading-content {
-		font-size: 0.2rem;
-		padding-left: 0.2rem;
-	}
-	.footer-logo {
-		width: 10rem;
-		margin-bottom: 0.7rem;
-	}
-	.bottom a,
-	.copy-right {
-		font-size: 0.4rem;
-	}
-	.card-header {
-		font-size: 1rem;
-	}
-	.card-text {
-		font-size: 1.3rem;
-	}
-	.card-section h1,
-	.world-map-section h1,
-	.table-section h1,
-	.table-section-timeline h1,
-	.world-cases-chart h1,
-	.usa-chart h1,
-	.vaccine-map h1,
-	.timeline-paragraph h1 {
-		font-size: 1.3rem;
-	}
-	.timeline-paragraph h2 {
-		font-size: 1.1rem;
-	}
-	.world-map-section p,
-	.table-section p,
-	.table-section-timeline p,
-	.world-cases-chart p,
-	.vaccine-map p,
-	.paragraph,
-	.timeline-paragraph p {
-		font-size: 0.9rem;
-	}
-}
-@media (min-width: 576px) and (max-width: 767px) {
+
+@media (min-width: 576px) and (max-width: 768px) {
 	main {
 		width: 90%;
 	}
@@ -689,6 +689,7 @@ footer {
 		font-size: 0.8rem;
 	}
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
 	.card-deck {
 		width: 90%;
@@ -780,6 +781,7 @@ footer {
 		font-size: 1.3rem;
 	}
 }
+
 @media (min-width: 1025px) and (max-width: 1079px) {
 	.card-text {
 		font-size: 1.3rem;
@@ -846,12 +848,16 @@ footer {
 }
 @media (min-width: 1091px) and (max-width: 1366px) {
 	.card-deck {
-		width: 85%;
+		width: 80%;
 		margin-top: 2rem;
 	}
 	.logo {
 		width: 18rem;
 	}
+	.card-body a {
+		margin: 0 !important;
+	}
+
 	.header-text-container {
 		width: 60%;
 		margin-left: 1rem;
