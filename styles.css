@@ -713,10 +713,6 @@ footer {
 		width: 90%;
 	}
 
-	.card-deck {
-		width: 100%;
-		margin-top: 3rem;
-	}
 	header {
 		height: fit-content;
 	}
@@ -769,7 +765,7 @@ footer {
 		font-size: 1.7rem;
 	}
 	.card-deck {
-		width: 100%;
+		width: 90%;
 		margin-top: 3rem;
 	}
 	.card-header {
@@ -814,7 +810,6 @@ footer {
 		font-size: 1.5rem;
 	}
 }
-
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 	.card-deck {
 		width: 85%;
@@ -823,6 +818,10 @@ footer {
 @media (min-width: 992px) and (max-width: 1090px) {
 	header {
 		height: fit-content;
+	}
+
+	main {
+		width: 85%;
 	}
 	.logo {
 		width: 15rem;
@@ -840,6 +839,9 @@ footer {
 		margin-left: 4rem;
 		margin-top: 4rem;
 		width: 11rem;
+	}
+	.card-deck {
+		width: 80%;
 	}
 }
 @media (min-width: 1091px) and (max-width: 1366px) {
@@ -873,7 +875,7 @@ footer {
 		width: 18rem;
 	}
 	main {
-		width: 70%;
+		width: 75%;
 	}
 	.header-text-container p {
 		font-size: 1.1rem;
@@ -886,7 +888,7 @@ footer {
 @media (min-width: 1500px) and (max-width: 1700px) {
 	.container-fluid,
 	.header-container {
-		width: 80%;
+		width: 75%;
 	}
 
 	.logo {
@@ -909,14 +911,14 @@ footer {
 @media (min-width: 1701px) and (max-width: 2000px) {
 	.container-fluid,
 	.header-container {
-		width: 70%;
+		width: 65%;
 	}
 
 	.logo {
 		width: 20rem;
 	}
 	main {
-		width: 65%;
+		width: 60%;
 	}
 	.header-text-container p {
 		font-size: 1.1rem;
@@ -925,10 +927,10 @@ footer {
 @media (min-width: 2001px) and (max-width: 2199px) {
 	.container-fluid,
 	.header-container {
-		width: 65%;
+		width: 60%;
 	}
 	main {
-		width: 60%;
+		width: 55%;
 	}
 	.header-text-container p {
 		font-size: 1.1rem;
@@ -940,10 +942,10 @@ footer {
 @media (min-width: 2200px) and (max-width: 2299px) {
 	.container-fluid,
 	.header-container {
-		width: 60%;
+		width: 55%;
 	}
 	main {
-		width: 55%;
+		width: 50%;
 	}
 	.header-text-container p {
 		font-size: 1.1rem;
@@ -952,10 +954,10 @@ footer {
 @media (min-width: 2300px) {
 	.container-fluid,
 	.header-container {
-		width: 55%;
+		width: 50%;
 	}
 	main {
-		width: 50%;
+		width: 45%;
 	}
 	.header-text-container p {
 		font-size: 1.1rem;
