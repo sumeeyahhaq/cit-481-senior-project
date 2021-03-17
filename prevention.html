@@ -25,10 +25,10 @@
 		<link rel="icon" href="assets/favicon.ico" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
-	<body onload="copyRights()">
+	<body onload="checkDevices(); copyRights()">
 		<header>
 			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-				<div class="container">
+				<div class="container-fluid">
 					<a class="navbar-brand" href="index.html"
 						><img src="assets/logo.png" alt="logo" class="logo" />
 					</a>
@@ -68,9 +68,13 @@
 								</a>
 
 								<div
+									id="remove-hover"
 									class="dropdown-menu drop"
 									aria-labelledby="navbarDropdown"
 								>
+									<a class="dropdown-item" href="vaccine.html">Vaccination </a>
+									<div class="dropdown-divider"></div>
+
 									<a class="dropdown-item" href="vaccine.html#vaccination-chart"
 										>Vaccination Chart</a
 									>
@@ -93,7 +97,9 @@
 								</div>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link current" href="prevention.html">Prevention</a>
+								<a class="nav-link current" href="prevention.html"
+									>Prevention</a
+								>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="about.html">About</a>
@@ -244,6 +250,7 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="lightbox2-2.11.3/dist/js/lightbox.js"></script>
+		<script src="check-devices.js" type="text/javascript"></script>
 		<script src="lightbox-options.js" type="text/javascript"></script>
 		<script src="footer.js" type="text/javascript"></script>
 		<footer>
@@ -259,6 +266,9 @@
 				<a class="contact" href="privacy-policy.html" target="_blank"
 					>Privacy Policy
 				</a>
+				&nbsp; | &nbsp;
+				<a class="contact" href="about.html#source-section"> Resources</a>
+
 				&nbsp; | &nbsp;
 				<a class="contact" href="mailto: svksams@gmail.com">
 					<i class="fas contact fa-envelope"> Contact us</i></a

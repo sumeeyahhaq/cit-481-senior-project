@@ -2,10 +2,16 @@
 	margin: 0;
 	padding: 0;
 }
+
+.fixedPosition {
+	opacity: 0.5;
+}
 header {
 	height: 25rem;
 	background-color: #1f2833;
+	width: 100%;
 }
+
 main {
 	width: 80%;
 	margin: auto;
@@ -23,8 +29,10 @@ main {
 .navbar {
 	background-color: #45a29e !important;
 }
-.container {
+
+.container-fluid {
 	padding: 0;
+	width: 90%;
 }
 
 .nav-item {
@@ -69,9 +77,12 @@ main {
 }
 .header-text-container {
 	color: white;
-	width: 40%;
+	width: 50%;
 	margin-left: 1rem;
 	margin-top: 4rem;
+}
+.header-text-container h1 {
+	font-size: 2.2rem;
 }
 .header-text-container p {
 	margin-top: 2rem;
@@ -86,7 +97,7 @@ main {
 }
 .header-image-container {
 	width: 20%;
-	margin-left: 22rem;
+	margin-left: 20rem;
 	margin-top: 3rem;
 }
 .virus-img {
@@ -99,7 +110,8 @@ main {
 	margin: auto;
 	text-align: center;
 	margin-top: 8rem;
-	font-size: 2.5rem;
+	margin-bottom: 4rem;
+	font-size: 2rem;
 }
 .card-deck {
 	width: 80%;
@@ -113,22 +125,23 @@ main {
 }
 
 .card-header {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	background-color: lightgray;
 }
 .smaller-card-header {
 	height: min-content;
-	font-size: 1.1rem;
+	font-size: 1rem;
 }
 
 .card-body {
-	font-size: 2rem;
+	font-size: 1.7rem;
 }
 .card-body hr {
 	margin: 0;
 }
 .card-text {
 	margin-bottom: 2rem;
+	font-size: 1.5rem;
 }
 .card-text-smaller {
 	font-size: 1.3rem;
@@ -142,18 +155,33 @@ main {
 #first_case {
 	color: rgb(15, 82, 186);
 }
+#world-chart,
+#world-table,
+#us-table,
+#us-chart {
+	height: 8rem;
+}
 .card-link {
 	font-size: 0.8rem;
 }
 .world-map-section,
-.table-section,
-.world-cases-chart,
-.usa-chart,
 .vaccine-map,
 .vaccine-chart {
 	width: 80%;
 	margin: auto;
 	margin-top: 10rem;
+}
+.usa-chart,
+.table-section,
+.world-cases-chart {
+	width: 80%;
+	margin: auto;
+	margin-top: 2rem;
+}
+.table-section-timeline {
+	width: 80%;
+	margin: auto;
+	margin-top: 8rem;
 }
 .vaccine-map {
 	margin-top: 1rem;
@@ -167,6 +195,7 @@ main {
 .table-section h1,
 .world-cases-chart h1,
 .usa-chart h1,
+.table-section-timeline h1,
 .table-section h1,
 .vaccine-map h1 {
 	font-size: 1.4rem;
@@ -174,6 +203,7 @@ main {
 }
 .world-map-section p,
 .table-section p,
+.table-section-timeline p,
 .world-cases-chart p,
 .vaccine-map p {
 	font-size: 0.9rem;
@@ -209,12 +239,15 @@ main {
 .round-chart {
 	width: 80%;
 	margin: auto;
-	margin-top: 10rem;
+	margin-top: 8rem;
 }
 .timeline-paragraph {
 	width: 70%;
 	margin: auto;
 	margin-top: 5rem;
+}
+.timeline-paragraph-extra-style {
+	margin-top: 10rem;
 }
 .timeline-paragraph h1 {
 	font-size: 1.5rem;
@@ -234,11 +267,7 @@ main {
 .timeline-paragraph ul {
 	padding-left: 2rem;
 }
-.table-section {
-	width: 80%;
-	margin: auto;
-	margin-top: 10rem;
-}
+
 .search-container {
 	width: 100%;
 	text-align: right;
@@ -287,8 +316,8 @@ tr td {
 /* Footer Stylnig */
 footer {
 	text-align: center;
-	height: 10rem;
-	background-color: #1f2833;
+	height: 9rem;
+	background-color: #45a29e;
 	margin-top: 10rem;
 }
 .footer-logo {
@@ -321,6 +350,7 @@ footer {
 }
 /* End Footer Ftyling */
 
+/* Timeline page */
 .timeline-img {
 	width: 100%;
 	margin: 2rem 0 2rem 0;
@@ -329,10 +359,7 @@ footer {
 	font-weight: bold;
 }
 
-.source-link {
-	text-decoration: underline;
-}
-/* divs before the section on vaccine pages */
+/* Divs before the section on vaccine pages */
 #vaccination-chart {
 	height: 5rem;
 }
@@ -343,4 +370,610 @@ footer {
 	height: 1rem;
 }
 
-/* Responsivnes */
+.extra-paragraph h1 {
+	font-size: 1.2rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	text-align: left;
+}
+/* About page and sources */
+.source-section h1 {
+	font-size: 1.4rem;
+	margin-top: 5rem;
+}
+
+/**************************************** Responsivnes ****************************************/
+@media (max-width: 320px) {
+	.logo {
+		width: 10rem;
+	}
+	.card-body {
+		font-size: 1.1rem;
+	}
+	.card-body a {
+		display: inline-block;
+		margin: 0 !important;
+		font-size: 0.8rem;
+	}
+	.world-table-heading-content {
+		font-size: 0.2rem;
+		padding-left: 0.2rem;
+	}
+	.footer-logo {
+		width: 10rem;
+		margin-bottom: 0.7rem;
+	}
+	.bottom a,
+	.copy-right {
+		font-size: 0.4rem;
+	}
+	.card-header {
+		font-size: 1rem;
+	}
+	.card-text {
+		font-size: 1.3rem;
+	}
+	.card-section h1,
+	.world-map-section h1,
+	.table-section h1,
+	.table-section-timeline h1,
+	.world-cases-chart h1,
+	.usa-chart h1,
+	.vaccine-map h1,
+	.timeline-paragraph h1 {
+		font-size: 1.3rem;
+	}
+	.timeline-paragraph h2 {
+		font-size: 1.1rem;
+	}
+	.world-map-section p,
+	.table-section p,
+	.table-section-timeline p,
+	.world-cases-chart p,
+	.vaccine-map p,
+	.paragraph,
+	.timeline-paragraph p {
+		font-size: 0.9rem;
+	}
+}
+@media (max-width: 575px) {
+	/* Navbbar */
+	html,
+	body {
+		overflow-x: hidden;
+	}
+	main {
+		width: 90%;
+	}
+	header {
+		height: fit-content;
+	}
+	.logo {
+		width: 12rem;
+	}
+	.nav-item {
+		font-size: 1.1rem;
+	}
+	.current {
+		border-bottom: none;
+	}
+	.header-container {
+		padding-bottom: 1rem;
+	}
+	.header-text-container {
+		margin: 1rem 0 0 1rem;
+		width: 90%;
+	}
+	.header-text-container h1 {
+		font-size: 1.3rem;
+	}
+	.header-text-container p {
+		font-size: 0.9rem;
+	}
+	.header-image-container {
+		display: none;
+	}
+	#world-chart,
+	#world-table,
+	#us-table,
+	#us-chart {
+		height: 3rem;
+	}
+	.timeline-paragraph-extra-style {
+		margin-top: 0rem;
+	}
+	/* Footer */
+
+	.footer-logo {
+		width: 12rem;
+		margin-bottom: 0.7rem;
+	}
+
+	.bottom a,
+	.copy-right {
+		font-size: 0.6rem;
+	}
+	.card-section h1 {
+		margin-top: 4rem;
+	}
+	.card-deck {
+		width: 85%;
+		margin-top: 2rem;
+	}
+	.card {
+		margin-bottom: 2rem !important;
+	}
+	.card-header {
+		font-size: 1.2rem;
+	}
+	.card-text {
+		font-size: 1.7rem;
+	}
+	.world-map-section,
+	.table-section,
+	.table-section-timeline,
+	.world-cases-chart,
+	.usa-chart,
+	.vaccine-map,
+	.vaccine-chart,
+	.live-world-map {
+		margin-top: 3rem;
+		width: 100%;
+	}
+	.card-section h1,
+	.world-map-section h1,
+	.table-section h1,
+	.table-section-timeline h1,
+	.world-cases-chart h1,
+	.usa-chart h1,
+	.vaccine-map h1 {
+		text-align: center;
+		font-size: 1.5rem;
+		width: 100%;
+	}
+	.world-map-section p,
+	.table-section p,
+	.table-section-timeline p,
+	.world-cases-chart p,
+	.vaccine-map p,
+	.paragraph,
+	.timeline-paragraph p {
+		width: 100%;
+		font-size: 1rem;
+	}
+	.paragraph {
+		width: 100%;
+	}
+	.world-table-heading {
+		font-size: 0.7rem;
+	}
+	.world-table-heading-content {
+		padding-left: 0.5rem;
+	}
+	.searchbox {
+		width: 40%;
+	}
+	.search-by-country {
+		width: fit-content;
+	}
+	.search-container {
+		text-align: center;
+	}
+	.table-extra-style {
+		font-size: 0.5rem;
+		padding-left: 0;
+	}
+	.timeline-paragraph {
+		width: 100%;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	main {
+		width: 90%;
+	}
+	header {
+		height: fit-content;
+	}
+	#world-chart,
+	#world-table,
+	#us-table,
+	#us-chart {
+		height: 1rem;
+	}
+	.timeline-paragraph-extra-style {
+		margin-top: 0rem;
+	}
+	.card-deck {
+		width: 100% !important;
+		margin-top: 3rem;
+	}
+	.logo {
+		width: 15rem;
+	}
+	.nav-item {
+		font-size: 1.1rem;
+	}
+	.current {
+		border-bottom: none;
+	}
+	.header-container {
+		padding-bottom: 1rem;
+	}
+
+	.header-text-container {
+		margin: 1rem 0 0 1rem;
+		width: 90%;
+	}
+
+	.header-text-container h1 {
+		font-size: 1.4rem;
+	}
+	.header-text-container p {
+		font-size: 0.9rem;
+	}
+	.header-image-container {
+		display: none;
+	}
+
+	.card-section h1,
+	.world-map-section h1,
+	.table-section h1,
+	.table-section-timeline h1,
+	.world-cases-chart h1,
+	.usa-chart h1,
+	.vaccine-map h1 {
+		text-align: center;
+		font-size: 1.5rem;
+		width: 100%;
+		margin-top: 4rem;
+	}
+	.card-deck {
+		width: 100%;
+		margin-top: 3rem;
+	}
+
+	.card-header {
+		font-size: 1rem;
+	}
+
+	.card-body a {
+		display: inline-block;
+		font-size: 0.7rem;
+		margin: 0 !important;
+	}
+	.card-text {
+		font-size: 1.2rem;
+	}
+	.world-map-section,
+	.paragraph,
+	.table-section,
+	.table-section-timeline,
+	.world-cases-chart,
+	.round-chart,
+	.usa-chart,
+	.vaccine-map,
+	.vaccine-chart,
+	.live-world-map,
+	.timeline-paragraph {
+		width: 100%;
+		margin-top: 6rem;
+	}
+	.world-table-heading {
+		font-size: 0.9rem;
+	}
+
+	.world-table-heading-content {
+		padding-left: 1.5rem;
+	}
+	.table-extra-style {
+		padding-left: 0rem;
+	}
+}
+@media (min-width: 576px) and (max-width: 600px) {
+	.card-text,
+	.card-header {
+		font-size: 1.1rem;
+	}
+	.card-body {
+		font-size: 1rem;
+	}
+}
+@media (min-width: 601px) and (max-width: 767px) {
+	.card-body {
+		font-size: 1.1rem;
+	}
+	.card-body a {
+		display: inline-block;
+		margin: 0 !important;
+		font-size: 0.8rem;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.card-deck {
+		width: 90%;
+		margin-top: 2rem;
+	}
+	.card-header {
+		font-size: 1.1rem;
+	}
+	.card-body {
+		font-size: 1.1rem;
+	}
+	.card-text {
+		font-size: 1rem;
+	}
+	.card-body a {
+		display: inline-block;
+		margin: 0 !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	main {
+		width: 90%;
+	}
+
+	header {
+		height: fit-content;
+	}
+
+	.logo {
+		width: 15rem;
+	}
+
+	.card-body a {
+		font-size: 0.8rem;
+	}
+	.nav-item {
+		font-size: 1rem;
+	}
+	.current {
+		border-bottom: none;
+	}
+	.header-container {
+		padding-bottom: 2rem;
+	}
+	.header-text-container {
+		margin: 2rem 0 0 1rem;
+		width: 70%;
+	}
+	.header-text-container h1 {
+		font-size: 1.5rem;
+	}
+	.header-text-container p {
+		font-size: 1rem;
+	}
+	.header-image-container {
+		margin-left: 3rem;
+		margin-top: 4rem;
+	}
+	.world-map-section,
+	.table-section,
+	.table-section-timeline,
+	.world-cases-chart,
+	.usa-chart,
+	.vaccine-map,
+	.vaccine-chart,
+	.live-world-map,
+	.paragraph,
+	.timeline-paragraph {
+		margin-top: 3rem;
+		width: 90%;
+	}
+	.card-section h1 {
+		margin-top: 5rem;
+		font-size: 1.7rem;
+	}
+	.card-deck {
+		width: 90%;
+		margin-top: 3rem;
+	}
+	.card-header {
+		font-size: 1.2rem;
+	}
+	.card-text {
+		font-size: 1.3rem;
+	}
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+	.card-text {
+		font-size: 1.3rem;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1079px) {
+	.card-text {
+		font-size: 1.3rem;
+		text-align: center !important;
+	}
+	.card-header {
+		font-size: 1.1rem;
+	}
+	.card-body a {
+		display: inline-block;
+		font-size: 0.8rem;
+		margin: 0 !important;
+	}
+	.card-body {
+		font-size: 1rem;
+	}
+}
+@media (min-width: 1080px) and (max-width: 1185px) {
+	.card-body {
+		font-size: 1rem;
+	}
+	.card-body a {
+		display: inline-block;
+		font-size: 0.8rem;
+		margin: 0 !important;
+	}
+	.card-text {
+		font-size: 1.5rem;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.card-deck {
+		width: 85%;
+	}
+}
+@media (min-width: 992px) and (max-width: 1090px) {
+	header {
+		height: fit-content;
+	}
+
+	main {
+		width: 85%;
+	}
+	.logo {
+		width: 15rem;
+	}
+	.header-container {
+		padding-bottom: 3rem;
+	}
+	.header-text-container {
+		width: 70%;
+		margin-top: 3rem;
+		margin-left: 1rem;
+	}
+	.header-image-container {
+		margin-left: 2rem;
+		margin-left: 4rem;
+		margin-top: 4rem;
+		width: 11rem;
+	}
+	.card-deck {
+		width: 80%;
+	}
+}
+@media (min-width: 1091px) and (max-width: 1366px) {
+	.card-deck {
+		width: 80%;
+		margin-top: 2rem;
+	}
+	.logo {
+		width: 18rem;
+	}
+	.card-body a {
+		margin: 0 !important;
+	}
+
+	.header-text-container {
+		width: 60%;
+		margin-left: 1rem;
+	}
+	.header-image-container {
+		margin-left: 10rem;
+		margin-top: 5rem;
+		width: 13rem;
+	}
+	header {
+		height: fit-content;
+		padding-bottom: 2rem;
+	}
+}
+@media (min-width: 1367px) and (max-width: 1499px) {
+	.container-fluid,
+	.header-container {
+		width: 80%;
+	}
+	.logo {
+		width: 18rem;
+	}
+	main {
+		width: 75%;
+	}
+	.header-text-container p {
+		font-size: 1.1rem;
+	}
+	.header-image-container {
+		margin-top: 4rem;
+		width: 15rem;
+	}
+}
+@media (min-width: 1500px) and (max-width: 1700px) {
+	.container-fluid,
+	.header-container {
+		width: 75%;
+	}
+
+	.logo {
+		width: 19rem;
+	}
+	main {
+		width: 70%;
+	}
+	.header-text-container p {
+		font-size: 1.1rem;
+	}
+	.header-text-container {
+		width: 70%;
+	}
+	.header-image-container {
+		margin-top: 4rem;
+		width: 20rem;
+	}
+}
+@media (min-width: 1701px) and (max-width: 2000px) {
+	.container-fluid,
+	.header-container {
+		width: 65%;
+	}
+
+	.logo {
+		width: 20rem;
+	}
+	main {
+		width: 60%;
+	}
+	.header-text-container p {
+		font-size: 1.1rem;
+	}
+}
+@media (min-width: 2001px) and (max-width: 2199px) {
+	.container-fluid,
+	.header-container {
+		width: 60%;
+	}
+	main {
+		width: 55%;
+	}
+	.header-text-container p {
+		font-size: 1.1rem;
+	}
+	.header-image-container {
+		width: 16rem;
+	}
+}
+@media (min-width: 2200px) and (max-width: 2299px) {
+	.container-fluid,
+	.header-container {
+		width: 55%;
+	}
+	main {
+		width: 50%;
+	}
+	.header-text-container p {
+		font-size: 1.1rem;
+	}
+}
+@media (min-width: 2300px) {
+	.container-fluid,
+	.header-container {
+		width: 50%;
+	}
+	main {
+		width: 45%;
+	}
+	.header-text-container p {
+		font-size: 1.1rem;
+	}
+	.header-image-container {
+		width: 15rem;
+		margin-top: 4rem;
+		margin-left: 25rem;
+	}
+	.logo {
+		width: 20rem;
+	}
+}

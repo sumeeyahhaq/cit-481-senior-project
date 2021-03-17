@@ -26,10 +26,10 @@
 		<link rel="icon" href="assets/favicon.ico" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
-	<body onload="lightBoxOption(); copyRights(); ">
+	<body onload="checkDevices();    lightBoxOption(); copyRights(); ">
 		<header>
 			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-				<div class="container">
+				<div class="container-fluid">
 					<a class="navbar-brand" href="index.html"
 						><img src="assets/logo.png" alt="logo" class="logo" />
 					</a>
@@ -69,9 +69,13 @@
 								</a>
 
 								<div
+									id="remove-hover"
 									class="dropdown-menu drop"
 									aria-labelledby="navbarDropdown"
 								>
+									<a class="dropdown-item" href="vaccine.html">Vaccination </a>
+									<div class="dropdown-divider"></div>
+
 									<a class="dropdown-item" href="vaccine.html#vaccination-chart"
 										>Vaccination Chart</a
 									>
@@ -117,7 +121,7 @@
 						Covid-19. <br />
 					</p>
 					<a href="prevention.html"
-						>See how you can prevent or slow down the spread of Covid-19.</a
+						>How to prevent the spread of COVID-19</a
 					>
 				</div>
 				<div class="header-image-container">
@@ -129,11 +133,11 @@
 		<main>
 			<section class="live-world-map">
 				<div class="flourish-embed flourish-map" data-src="story/555214">
-					<script src="https://public.flourish.studio/resources/embed.js"></script>
+					
 				</div>
 			</section>
 
-			<section class="table-section">
+			<section class="table-section-timeline">
 				<h1>Worldwide Cases as of Today</h1>
 				<div class="search-container">
 					<label class="search-by-country">Search by Country</label>
@@ -168,7 +172,7 @@
 				</div>
 			</section>
 
-			<section class="timeline-paragraph">
+			<section class="timeline-paragraph timeline-paragraph-extra-style">
 				<h1>A Timeline of the Coronavirus Pandemic</h1>
 				<p>
 					The outbreak of the virus has sickened more than 100 million people.
@@ -488,6 +492,8 @@
 			integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://public.flourish.studio/resources/embed.js"></script>
+		<script src="check-devices.js" type="text/javascript"></script>
 		<script src="lightbox2-2.11.3/dist/js/lightbox.js"></script>
 		<script src="lightbox-options.js" type="text/javascript"></script>
 		<script src="search.js" type="text/javascript"></script>
@@ -506,6 +512,9 @@
 				<a class="contact" href="privacy-policy.html" target="_blank"
 					>Privacy Policy
 				</a>
+				&nbsp; | &nbsp;
+				<a class="contact" href="about.html#source-section"> Resources</a>
+
 				&nbsp; | &nbsp;
 				<a class="contact" href="mailto: svksams@gmail.com">
 					<i class="fas contact fa-envelope"> Contact us</i></a
