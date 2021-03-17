@@ -128,7 +128,7 @@
 				</div>
 			</div>
 		</header>
-
+		<div id="worldwide-info"></div>
 		<main>
 			<section class="card-section">
 				<h1>Worldwide</h1>
@@ -138,8 +138,18 @@
 						<div class="card-body">
 							<p class="card-text" id="total_cases"></p>
 							<hr />
-							<a href="#world-chart" class="card-link text-info">Show Graph</a>
-							<a href="#world-table" class="card-link text-info"
+
+							<a
+								href="#world-chart"
+								onclick="returnLink(1)"
+								class="card-link text-info"
+								>Show Graph</a
+							>
+
+							<a
+								href="#world-table"
+								onclick="returnLink(2)"
+								class="card-link text-info"
 								>View by Country</a
 							>
 						</div>
@@ -149,8 +159,16 @@
 						<div class="card-body">
 							<p class="card-text text-danger" id="total_death"></p>
 							<hr />
-							<a href="#world-chart" class="card-link text-info">Show Graph</a>
-							<a href="#world-table" class="card-link text-info"
+							<a
+								href="#world-chart"
+								onclick="returnLink(1)"
+								class="card-link text-info"
+								>Show Graph</a
+							>
+							<a
+								href="#world-table"
+								onclick="returnLink(2)"
+								class="card-link text-info"
 								>View by Country</a
 							>
 						</div>
@@ -160,8 +178,16 @@
 						<div class="card-body">
 							<p class="card-text text-success" id="total_recovered"></p>
 							<hr />
-							<a href="#world-chart" class="card-link text-info">Show Graph</a>
-							<a href="#world-table" class="card-link text-info"
+							<a
+								href="#world-chart"
+								onclick="returnLink(1)"
+								class="card-link text-info"
+								>Show Graph</a
+							>
+							<a
+								href="#world-table"
+								onclick="returnLink(2)"
+								class="card-link text-info"
 								>View by Country</a
 							>
 						</div>
@@ -228,6 +254,7 @@
 
 			<section class="table-section">
 				<div id="world-table"></div>
+				<div class="return-link-style" id="table-return"></div>
 				<h1>COVID-19 Statistics</h1>
 				<p>
 					Table shows total cases, total deaths and total recovered cases of
@@ -247,7 +274,8 @@
 
 			<section>
 				<div id="world-chart"></div>
-				<div class="world-cases-chart" >
+				<div class="world-cases-chart">
+					<div class="return-link-style" id="chart-return"></div>
 					<h1>COVID-19 Graph</h1>
 					<p>
 						This chart offers visual representation of total cases, fatality
@@ -289,6 +317,7 @@
 		<script src="check-devices.js" type="text/javascript"></script>
 		<script src="covid-cases.js" type="text/javascript"></script>
 		<script src="first-case.js" type="text/javascript"></script>
+		<script src="return-link.js" type="text/javascript"></script>
 		<script src="footer.js" type="text/javascript"></script>
 
 		<footer>
