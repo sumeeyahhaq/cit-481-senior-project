@@ -126,7 +126,7 @@
 				</div>
 			</div>
 		</header>
-
+		<div id="usa-info"></div>
 		<main>
 			<section class="card-section">
 				<h1 id="country_name_usa"></h1>
@@ -137,8 +137,16 @@
 						<div class="card-body">
 							<p class="card-text" id="total_cases_usa"></p>
 							<hr />
-							<a href="#us-chart" class="card-link text-info">Show Graph</a>
-							<a href="#us-table" class="card-link text-info"
+							<a
+								href="#us-chart"
+								onclick="returnLinkUSA(1)"
+								class="card-link text-info"
+								>Show Graph</a
+							>
+							<a
+								href="#us-table"
+								onclick="returnLinkUSA(2)"
+								class="card-link text-info"
 								>View by Country</a
 							>
 						</div>
@@ -148,8 +156,16 @@
 						<div class="card-body">
 							<p class="card-text text-danger" id="total_deaths_usa"></p>
 							<hr />
-							<a href="#us-chart" class="card-link text-info">Show Graph</a>
-							<a href="#us-table" class="card-link text-info"
+							<a
+								href="#us-chart"
+								onclick="returnLinkUSA(1)"
+								class="card-link text-info"
+								>Show Graph</a
+							>
+							<a
+								href="#us-table"
+								onclick="returnLinkUSA(2)"
+								class="card-link text-info"
 								>View by Country</a
 							>
 						</div>
@@ -159,8 +175,16 @@
 						<div class="card-body">
 							<p class="card-text text-success" id="total_recovered_usa"></p>
 							<hr />
-							<a href="#us-chart" class="card-link text-info">Show Graph</a>
-							<a href="#us-table" class="card-link text-info"
+							<a
+								href="#us-chart"
+								onclick="returnLinkUSA(1)"
+								class="card-link text-info"
+								>Show Graph</a
+							>
+							<a
+								href="#us-table"
+								onclick="returnLinkUSA(2)"
+								class="card-link text-info"
 								>View by Country</a
 							>
 						</div>
@@ -210,6 +234,8 @@
 
 			<section class="table-section">
 				<div id="us-table"></div>
+
+				<div class="return-link-style" id="table-return-usa"></div>
 				<h1>COVID-19 Statistics (USA)</h1>
 				<p>
 					Table shows total cases, total deaths and total recovered cases of
@@ -229,6 +255,7 @@
 
 			<section class="usa-chart">
 				<div id="us-chart"></div>
+				<div class="return-link-style extra-return-link-style" id="chart-return-usa"></div>
 				<p>
 					This chart shows cumulative tests performed in United States from
 					January 22, 2020 untill today, as well as confirmed cases and
@@ -258,6 +285,7 @@
 		<script src="check-devices.js" type="text/javascript"></script>
 		<script src="covid-cases-usa.js" type="text/javascript"></script>
 		<script src="first-case.js" type="text/javascript"></script>
+		<script src="return-link.js" type="text/javascript"></script>
 		<script src="footer.js" type="text/javascript"></script>
 
 		<footer>
