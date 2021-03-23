@@ -400,7 +400,20 @@ footer {
 .sources ol {
 	padding-left: 2rem;
 }
-
+.image-container {
+	text-align: center;
+}
+.extra-timeline-image {
+	width: 80%;
+}
+.test-video {
+	text-align: center;
+	margin-top: 3rem;
+}
+.test-video iframe {
+	width: 80%;
+	height: 25rem;
+}
 /**************************************** Responsivnes ****************************************/
 
 @media (max-width: 320px) {
