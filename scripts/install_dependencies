@@ -1,2 +1,2 @@
 #!/bin/bash
-yum install -y http
+yum install -y httpd
