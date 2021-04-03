@@ -322,6 +322,43 @@ tr td {
 	font-size: 0.9rem;
 }
 
+.dev-img-name-container img {
+	width: 8rem;
+	border-radius: 50%;
+	margin-left: 0.5rem;
+}
+.circle-background {
+	width: 8.5rem;
+	height: 8.2rem;
+	border-radius: 50%;
+	background-color: #45a29e;
+}
+
+.dev-img-name-container h2 {
+	background-color: #45a29e;
+	width: 30%;
+	color: white;
+	padding-left: 1rem;
+	height: fit-content;
+	width: fit-content;
+	padding: 0.5rem;
+	position: relative;
+	bottom: 9rem;
+	left: 7rem;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+.dev-paragraph {
+	position: relative;
+	bottom: 9rem;
+	left: 9rem;
+	width: 80%;
+}
+.dev-paragraph p {
+	font-size: 0.9rem;
+}
+
 /* Footer Stylnig */
 footer {
 	text-align: center;
