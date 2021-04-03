@@ -406,11 +406,11 @@ footer {
 .extra-timeline-image {
 	width: 80%;
 }
-.test-video {
+.video {
 	text-align: center;
 	margin-top: 3rem;
 }
-.test-video iframe {
+.video iframe {
 	width: 80%;
 	height: 25rem;
 }
@@ -600,7 +600,6 @@ footer {
 		width: 100%;
 	}
 }
-
 @media (min-width: 576px) and (max-width: 768px) {
 	main {
 		width: 90%;
