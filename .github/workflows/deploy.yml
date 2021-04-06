@@ -1,4 +1,4 @@
-name: CodeDeploy Trigger
+name: CodeDeploy 
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
     - name: Trigger Deployment
       run:
         aws deploy create-deployment \
-        --application-name  AWSomeCovidStatsApp  \
+        --application-name AWSomeCovidStatsApp  \
         --deployment-group-name AWSomeCovidStatsDeployGroup \
         --deployment-config-name CodeDeployDefault.OneAtATime \
         --github-location repository=sumeeyahhaq/cit-481-senior-project,commitId=15eedd91bc1a0f882d717b99d03322b3476cc0f8
