@@ -1,0 +1,26 @@
+name: CodeDeploy 
+
+on:
+  push:
+    branches:
+    - 'master'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with: 
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+    - name: Trigger Deployment
+      run:
+        aws deploy create-deployment 
+        --application-name AWSomeCovidStatsApp  
+        --deployment-group-name AWSomeCovidStatsDeployGroup 
+        --deployment-config-name CodeDeployDefault.OneAtATime 
+        --github-location repository=sumeeyahhaq/cit-481-senior-project,commitId=15eedd91bc1a0f882d717b99d03322b3476cc0f8
