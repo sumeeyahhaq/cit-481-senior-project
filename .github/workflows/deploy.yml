@@ -23,4 +23,4 @@ jobs:
         --application-name AWSomeCovidStatsApp  
         --deployment-group-name AWSomeCovidStatsDeployGroup 
         --deployment-config-name CodeDeployDefault.OneAtATime 
-        --github-location repository=sumeeyahhaq/cit-481-senior-project,commitId=15eedd91bc1a0f882d717b99d03322b3476cc0f8
+        --github-location repository=sumeeyahhaq/cit-481-senior-project,commitId=dcb4fb353c16cec67d76b4dfc3e2b08ba0570a58
