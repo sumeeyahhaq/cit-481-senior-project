@@ -19,8 +19,8 @@ jobs:
         aws-region: us-east-1
     - name: Trigger Deployment
       run:
-        aws deploy create-deployment \
-        --application-name application \ 
-        --deployment-group-name deploymentgroup \
-        --deployment-config-name CodeDeployDefault.OneAtATime \ 
-        --github-location repository=sumeeyahhaq/cit-481-senior-project,commitId=41c6ad1d8eb056381345a7f4198d85ffe9134e29
+        aws deploy create-deployment 
+        --application-name application 
+        --deployment-group-name deploymentgroup
+        --deployment-config-name CodeDeployDefault.OneAtATime 
+        --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
