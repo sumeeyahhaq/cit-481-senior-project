@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: /cit-481-senior-project
+  - source: /index.html
     destination: /var/www/cit-481-senior-project/
