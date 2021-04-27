@@ -22,5 +22,5 @@ jobs:
         aws deploy create-deployment 
         --application-name application 
         --deployment-group-name deploymentgroup
-        --deployment-config-name CodeDeployDefault.AllAtOnce
+        --deployment-config-name CodeDeployDefault.OneAtATime	
         --github-location repository=sumeeyahhaq/cit-481-senior-project,commitId=c453d4445fdc52680bc6de25f2faab7656e470fa
