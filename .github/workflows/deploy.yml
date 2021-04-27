@@ -21,6 +21,6 @@ jobs:
       run:
         aws deploy create-deployment 
         --application-name application 
-        --deployment-group-name deploymentgroup
+        --deployment-group-name deploymentgroup-2
         --deployment-config-name CodeDeployDefault.OneAtATime	
         --github-location repository=sumeeyahhaq/cit-481-senior-project,commitId=${{ github.sha }}
