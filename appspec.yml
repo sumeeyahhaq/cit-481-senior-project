@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.html
-    destination: /var/www/cit-481-senior-project/    
+  - source: /cit-481-senior-project/
+    destination: /var/www/
         
  
    
