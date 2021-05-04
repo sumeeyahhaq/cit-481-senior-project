@@ -2,6 +2,6 @@ version: 0.0
 os: linux
 files:
   - source: /cit-481-senior-project
-    destination: /var/www
+    destination: /var/www/
  
    
