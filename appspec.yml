@@ -1,25 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.html
-    destination: /var/www/cit-481-senior-project/
-  - source: /about.html
-    destination: /var/www/cit-481-senior-project/
-  - source: /domestic.html
-    destination: /var/www/cit-481-senior-project/
-  - source: /faq.html
-    destination: /var/www/cit-481-senior-project/
-  - source: /prevention.html
-    destination: /var/www/cit-481-senior-project/
-  - source: /vaccine.html
-    destination: /var/www/cit-481-senior-project/
-  - source: /timeline.html
-    destination: /var/www/cit-481-senior-project/
-  - source: /terms.html
-    destination: /var/www/cit-481-senior-project/
-  - source: /resources.html
-    destination: /var/www/cit-481-senior-project/
-  - source: /privacy-policy.html
-    destination: /var/www/cit-481-senior-project/
-
+  - source: /
+    destination: /var/www/cit-481-senior-project
+ 
    
