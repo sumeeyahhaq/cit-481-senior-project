@@ -3,8 +3,7 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/cit-481-senior-project
-  - source: /about.html
-    destination: /var/www/cit-481-senior-project
+ 
         
  
    
