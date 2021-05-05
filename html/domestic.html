@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="AWSome COVID Stats shows covid cases, deaths and recovered cases from all arround the world as well as the chart and interactive map for all countries"
+		/>
+		<title>COVID-19 Stats</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+			integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="icon" href="assets/favicon.ico" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body onload="checkDevices(); copyRights()">
+		<header>
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html"
+						><img src="assets/logo.png" alt="logo" class="logo" />
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Worldwide</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link current" href="domestic.html">Domestic</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="timeline.html">Timeline</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="vaccine.html"
+									id="navbarDropdown"
+									role="button"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									Vaccine
+								</a>
+
+								<div
+									id="remove-hover"
+									class="dropdown-menu drop"
+									aria-labelledby="navbarDropdown"
+								>
+									<a class="dropdown-item" href="vaccine.html">Vaccination </a>
+									<div class="dropdown-divider"></div>
+
+									<a class="dropdown-item" href="vaccine.html#vaccination-chart"
+										>Vaccination Chart</a
+									>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="vaccine.html#how-vaccines-work"
+										>How Vaccines Work</a
+									>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="vaccine.html#Pfizer-BioNTech"
+										>Pfizer-BioNTech</a
+									>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="vaccine.html#Moderna"
+										>Moderna</a
+									>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="vaccine.html#Johnson-Janssen"
+										>Johnson’s Janssen</a
+									>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="prevention.html">Prevention</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="faq.html">FAQ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div class="header-container">
+				<div class="header-text-container">
+					<h1>U.S. COVID-19 Cases</h1>
+					<p>
+						This page displays the COVID-19 cases in United States. It offers an
+						interactive map and a chart to view active cases, deaths and
+						recovered cases in each state within U.S. The data is updated
+						regurarly to reflect the most up to date information.<br />
+					</p>
+					<a href="index.html">See worldwide cases instead</a>
+				</div>
+				<div class="header-image-container">
+					<img src="assets/virus-image.png" alt="Covid-19" class="virus-img" />
+				</div>
+			</div>
+		</header>
+		<div id="usa-info"></div>
+		<main>
+			<section class="card-section">
+				<h1 id="country_name_usa"></h1>
+
+				<div class="card-deck card-deck-margin">
+					<div class="card text-center mb-3">
+						<div class="card-header">Total Cases</div>
+						<div class="card-body">
+							<p class="card-text" id="total_cases_usa"></p>
+							<hr />
+							<a
+								href="#us-chart"
+								onclick="returnLinkUSA(1)"
+								class="card-link text-info"
+								>Show Graph</a
+							>
+							<a
+								href="#us-table"
+								onclick="returnLinkUSA(2)"
+								class="card-link text-info"
+								>View by Country</a
+							>
+						</div>
+					</div>
+					<div class="card text-center mb-3">
+						<div class="card-header">Deaths</div>
+						<div class="card-body">
+							<p class="card-text text-danger" id="total_deaths_usa"></p>
+							<hr />
+							<a
+								href="#us-chart"
+								onclick="returnLinkUSA(1)"
+								class="card-link text-info"
+								>Show Graph</a
+							>
+							<a
+								href="#us-table"
+								onclick="returnLinkUSA(2)"
+								class="card-link text-info"
+								>View by Country</a
+							>
+						</div>
+					</div>
+					<div class="card text-center mb-3">
+						<div class="card-header">Recovered</div>
+						<div class="card-body">
+							<p class="card-text text-success" id="total_recovered_usa"></p>
+							<hr />
+							<a
+								href="#us-chart"
+								onclick="returnLinkUSA(1)"
+								class="card-link text-info"
+								>Show Graph</a
+							>
+							<a
+								href="#us-table"
+								onclick="returnLinkUSA(2)"
+								class="card-link text-info"
+								>View by Country</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="card-deck card-deck-2">
+					<div class="card text-center mb-3">
+						<div class="card-header smaller-card-header">New Cases</div>
+						<div class="card-body">
+							<p class="card-text card-text-smaller" id="new_cases_usa"></p>
+						</div>
+					</div>
+					<div class="card text-center mb-3">
+						<div class="card-header smaller-card-header">New Deaths</div>
+						<div class="card-body">
+							<p
+								class="card-text card-text-smaller text-danger"
+								id="new_deaths_usa"
+							></p>
+						</div>
+					</div>
+					<div class="card text-center mb-3">
+						<div class="card-header smaller-card-header">First Case</div>
+						<div class="card-body">
+							<p class="card-text card-text-smaller" id="first_case"></p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="world-map-section">
+				<h1>COVID-19 USA Map</h1>
+				<p>
+					The map shows total cases, deaths and total recovered cases of
+					Covid-19 in U.S. It also offers visual representation of worldwide
+					cases. Hover over on any state to get more detailed information
+					specific to that state. Darker reds have more cases than the lighter
+					ones.
+				</p>
+				<div class="world-map-wraper">
+					<div class="elfsight-app-e9869255-f06c-4d46-be0e-a73f42830c97"></div>
+				</div>
+			</section>
+
+			<section class="table-section">
+				<div id="us-table"></div>
+
+				<div class="return-link-style" id="table-return-usa"></div>
+				<h1>COVID-19 Statistics (USA)</h1>
+				<p>
+					Table shows total cases, total deaths and total recovered cases of
+					Covid-19 in all states. The data is sorted in descending order based
+					on total cases for each State.
+				</p>
+				<div class="world-table-heading">
+					<div class="world-table-heading-content">STATE</div>
+					<div class="world-table-heading-content">CASES</div>
+					<div class="world-table-heading-content">DEATHS</div>
+					<div class="world-table-heading-content">RECOVERED</div>
+				</div>
+				<div class="world-table-wraper">
+					<div class="elfsight-app-27f284e4-e014-4b6d-a451-5d3b02773eef"></div>
+				</div>
+			</section>
+
+			<section class="usa-chart">
+				<div id="us-chart"></div>
+				<div
+					class="return-link-style extra-return-link-style"
+					id="chart-return-usa"
+				></div>
+				<p>
+					This chart shows cumulative tests performed in United States from
+					January 22, 2020 untill today, as well as confirmed cases and
+					confirmed deaths in United States.
+				</p>
+
+				<iframe
+					src="https://ourworldindata.org/grapher/covid-tests-cases-deaths?tab=chart&stackMode=absolute&time=2020-02-20..latest&country=~USA&region=World"
+					loading="lazy"
+					style="width: 100%; height: 600px; border: 0px none"
+				></iframe>
+			</section>
+		</main>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+			integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+		<script src="check-devices.js" type="text/javascript"></script>
+		<script src="covid-cases-usa.js" type="text/javascript"></script>
+		<script src="first-case.js" type="text/javascript"></script>
+		<script src="return-link.js" type="text/javascript"></script>
+		<script src="footer.js" type="text/javascript"></script>
+
+		<footer>
+			<a href="index.html">
+				<img src="assets/logo.png" alt="logo" class="footer-logo" />
+			</a>
+
+			<div class="bottom">
+				<a class="contact" href="terms.html" target="_blank"
+					>Terms and Conditions</a
+				>
+				&nbsp; | &nbsp;
+				<a class="contact" href="privacy-policy.html" target="_blank"
+					>Privacy Policy
+				</a>
+				&nbsp; | &nbsp;
+				<a class="contact" href="resources.html" target="_blank"> Resources</a>
+
+				&nbsp; | &nbsp;
+				<a class="contact" href="mailto: svksams@gmail.com">
+					<i class="fas contact fa-envelope"> Contact us</i></a
+				>
+			</div>
+			<div class="copy-right"></div>
+		</footer>
+	</body>
+</html>
