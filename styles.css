@@ -1077,3 +1077,30 @@ footer {
 		width: 20rem;
 	}
 }
+@media (min-width: 3000px){
+	.container-fluid,
+	.header-container {
+		width: 45%;
+	}
+	main {
+		width: 40%;
+	}
+}
+@media (min-width: 3500px){
+	.container-fluid,
+	.header-container {
+		width: 40%;
+	}
+	main {
+		width: 35%;
+	}
+}
+@media (min-width: 4000px){
+	.container-fluid,
+	.header-container {
+		width: 35%;
+	}
+	main {
+		width: 30%;
+	}
+}
