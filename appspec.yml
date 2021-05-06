@@ -1,6 +1,16 @@
 version: 0.0
 os: linux
+<<<<<<< HEAD
 files:
   - source: /index.html
     destination: /var/www/cit-481-senior-project
 
+=======
+files: 
+  - source: /index.html
+    destination: /var/www/cit-481-senior-project
+ 
+        
+ 
+   
+>>>>>>> 1ae197c72d17a166f18afc9af37f2e4a5ff52393
