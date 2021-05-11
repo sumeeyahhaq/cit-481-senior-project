@@ -47,7 +47,7 @@ Currently, the website is lagging when users navigate from one page to another. 
  
 <b>Resources:</b> <br>
 <ul>
-<li>GitHub Repository</li>
-<li>Website </li>
-<li>Ansible Playbook</li>
+<li><p><a href="https://github.com/sumeeyahhaq/cit-481-senior-project">GitHub Repository</a></p></li>
+<li><p><a href="https://awsomecovidstats.com/">Website</a></p></li>
+<li><p><a href="https://awsomecovidstats.com/">Anisble Playbook</a></p></li>
 </ul>
