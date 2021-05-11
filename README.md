@@ -38,7 +38,7 @@ Listed below are the services implemented in order to host and make this applica
 <b>Architecture:</b> <br><br>
 <p><a href="https://github.com/sumeeyahhaq/cit-481-senior-project/blob/master/Figure%201A.png">Figure 1A: General overview of AWS Services used in application</a></p>
 <p><a href="https://github.com/sumeeyahhaq/cit-481-senior-project/blob/master/Figure%201B.png">Figure 1B: Overview of VPC services implemented</a></p>
-<p><a href="https://github.com/sumeeyahhaq/cit-481-senior-project/blob/master/Figure%201C.png"></a>Figure 1C: Overview of CodeDeploy automation</p>
+<p><a href="https://github.com/sumeeyahhaq/cit-481-senior-project/blob/master/Figure%201C.png">Figure 1C: Overview of CodeDeploy automation</a></p>
 
 <b>Issues:</b> <br><br>
 Currently, the website is lagging when users navigate from one page to another. This may be due to the amount of APIs implemented in the site. The site also takes some time to load in general. The application still has issues in updating automatically and requires a manual push at times. CodeDeploy sometimes updates only the index.html file and not all the pages in the application. 
