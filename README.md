@@ -35,17 +35,17 @@ Listed below are the services implemented in order to host and make this applica
 <li>GitHub - Holds all the code and information for the application</li>
 </ul> 
 
-<b>Architecture:<b> <br>
+<b>Architecture:</b> <br>
 Figure 1A: General overview of AWS Services used in application
  
 Figure 1B: Overview of VPC services implemented
 
 Figure 1C: Overview of CodeDeploy automation
  
-<b>Issues:<b> <br>
+<b>Issues:</b> <br>
 Currently, the website is lagging when users navigate from one page to another. This may be due to the amount of APIs implemented in the site. The site also takes some time to load in general. The application still has issues in updating automatically and requires a manual push at times. CodeDeploy sometimes updates only the index.html file and not all the pages in the application. 
  
-<b>Resources:<b> <br>
+<b>Resources:</b> <br>
 <ul>
 <li>GitHub Repository</li>
 <li>Website </li>
