@@ -23,6 +23,9 @@ We also wanted to showcase our knowledge of Continuous Integration and Continuou
 <li>Set up VPC and EC2 instances to work together and plan for failover in the event of the public EC2 instance failing</li>
 </ul>
 
+<b>Screenshot:</b><br>
+![alt text](https://github.com/sumeeyahhaq/cit-481-senior-project/blob/master/Website%20screenshots.png)
+
 <b>Services:</b><br><br>
 Listed below are the services implemented in order to host and make this application.
 <ul>
