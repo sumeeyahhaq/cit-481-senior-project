@@ -24,6 +24,7 @@ We also wanted to showcase our knowledge of Continuous Integration and Continuou
 </ul>
 
 <b>Screenshot:</b><br>
+
 ![alt text](https://github.com/sumeeyahhaq/cit-481-senior-project/blob/master/Website%20screenshots.png)
 
 <b>Services:</b><br><br>
