@@ -4,7 +4,7 @@
 <ul>
  <li>Namtae Chanachit - namtae.chanachit.376@my.csun.edu</li>
  <li>Sumeeyah Haq - sumeeyah.haq.101@my.csun.edu</li>
- <li>Samvel Vardaniyan - samvel.vardanyan.498@my.csun.edu</li>
+ <li>Samvel Vardanyan - samvel.vardanyan.498@my.csun.edu</li>
  <li>Kenny Vo - kenny.vo.742@my.csun.edu</li>
 </ul>
 
