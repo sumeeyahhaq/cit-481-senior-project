@@ -1,0 +1,34 @@
+---
+  - hosts: webservers
+    remote_user: ubuntu
+    become: yes
+
+    tasks:
+      - name: Install Apache2
+        apt:
+          name:
+            - apache2
+          state: present
+
+      - name: Install git
+        apt:
+          name:
+            - git
+          state: present
+
+      - name: Clear directory
+        file:
+          state: absent
+          path: /var/www/html
+
+      - name: Clone Repo AwsomeCovidStats
+        git:
+          repo: "https://github.com/sumeeyahhaq/cit-481-senior-project.git"
+          version: master
+          dest: "/var/www/html"
+          update: yes
+          force: yes
+
+    handlers:
+      - name: restart apache2
+        service: name=apache2 state=restarted
